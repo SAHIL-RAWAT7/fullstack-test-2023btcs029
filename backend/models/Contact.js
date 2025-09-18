@@ -1,3 +1,4 @@
+// models/Contact.js
 import mongoose from "mongoose";
 
 const contactSchema = new mongoose.Schema({
@@ -7,5 +8,4 @@ const contactSchema = new mongoose.Schema({
   message: { type: String, required: true },
 }, { timestamps: true });
 
-const Contact = mongoose.model("Contact", contactSchema);
-export default Contact;
+export default mongoose.model("Contact", contactSchema);
